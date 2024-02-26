@@ -7,7 +7,7 @@
     <script>
 function pw() {
     var testV = 1;
-    var pass1 = prompt('out of two paths, you must forge one.','');
+    var pass1 = prompt('out of two paths, you must forge one.',' ');
     while (testV < 3) {
         if (!pass1) history.go(-1);
         if (pass1.toLowerCase() == "1200melody") {
@@ -16,7 +16,7 @@ function pw() {
             break;
         } 
         testV+=1;
-        var pass1 = prompt('out of two paths, you must forge one.','');
+        var pass1 = prompt('out of two paths, you must forge.','');
     }
     if (pass1.toLowerCase()!="password" & testV ==3) history.go(-1);
     return " ";
@@ -26,5 +26,5 @@ function pw() {
 <input type="button" value="in omnia paratus" onClick="pw()">
 </FORM>
 </script>
-</body>a
+</body>
 </html>
