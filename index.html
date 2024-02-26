@@ -6,11 +6,9 @@
 <body>
 <form>
     <label for="pswd">out of two paths, you must choose one. </label>
-    <br></br>
     <input type="password" id="pswd">
     <input type="button" value="in omnia paratus" onclick="checkPswd();" />
 </form>
-<!--Function to check password the already set password is admin-->
 <script type="text/javascript">
     function checkPswd() {
         var confirmPassword = "1200melody";
@@ -21,17 +19,6 @@
             alert("try again.");
         }
     }
-    function checkPswde(e) {
-       if((e && e.keyCode == 13) || e == 0) {
-        var confirmPassword = "1200melody";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {     window.location="welcome.html";
-        }
-        else{
-            alert("try again.");
-        }
-       }
-    }
-    </script>
+</script>
 </body>
 </html>
