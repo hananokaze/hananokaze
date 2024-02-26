@@ -21,6 +21,13 @@
             alert("try again.");
         }
     }
-</script>
+    function checkPswd(e) {
+       if((e && e.keyCode == 13) || e == 0) {
+         alert("The form was submitted");
+         document.forms.form01.submit();
+         document.forms.form01.fname.value = "";
+       }
+    }
+    </script>
 </body>
 </html>
