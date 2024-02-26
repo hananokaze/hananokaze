@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>1</title>
+</head>
+<body>
+<form>
+    <label for="pswd">out of two paths, you must choose one. </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "1200melody";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {     window.location="welcome.html";
+        }
+        else{
+            alert("try again.");
+        }
+    }
+</script>
+</body>
+</html>
