@@ -4,22 +4,27 @@
     <title>1</title>
 </head>
 <body>
-<form>
-    <label for="pswd">out of two paths, you must forge one. </label>
-    <br></br>
-    <input type="password" id="pswd">
-    <input type="button" value="in omnia paratus" onclick="checkPswd();" />
-</form>
-<script type="text/javascript">
-    function checkPswd() {
-        var confirmPassword = "1200melody";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {     window.location="welcome.html";
-        }
-        else{
-            alert("try again.");
-        }
+    <script>
+function pw() {
+    var testV = 1;
+    var pass1 = prompt('out of two paths, you must forge one.',' ');
+    while (testV < 3) {
+        if (!pass1) history.go(-1);
+        if (pass1.toLowerCase() == "1200melody") {
+            alert('in omnia paratus.');
+            window.open('protectpage.html');
+            break;
+        } 
+        testV+=1;
+        var pass1 = prompt('try again.','in omnia paratus');
     }
+    if (pass1.toLowerCase()!="password" & testV ==3) history.go(-1);
+    return " ";
+}
+</script>
+<FORM>
+<input type="button" value="in omnia paratus" onClick="pw()">
+</FORM>
 </script>
 </body>
 </html>
